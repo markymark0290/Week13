@@ -23,7 +23,7 @@ public class Contributor {
 	private Long contributorId; // contributor_id going to convert to snake case
 	private String contributorName;
 	
-	@Column(unique = true)
+	@Column(unique = true) //unique = true means we can't have multiple of the same email
 	private String contributorEmail;
 	
 	//since PetParks has a contributor and Contributor has PetParks, when Jackson tries to write the 
